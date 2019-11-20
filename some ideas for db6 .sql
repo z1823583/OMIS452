@@ -5,7 +5,7 @@ RIGHT JOIN Vehicles ON parts.Model = vehicles.Model
 where PartID IS NOT NULL
 Order by PartID ASC
 
-/*co related 1 shows vehicles that have a part*/
+/*co related 1 shows vehicles that have a part associated to them*/
 select distinct parts.PartID, parts.Make, parts.Model
 from parts
 where EXISTS
